@@ -27,7 +27,7 @@
 ;;(require 'setnu)
 ;;;设置行号
 (global-linum-mode t)
-(setnu-mode t)
+;;(setnu-mode t)
 ;;(require 'setup-init)
 ;;; 支持中文
 (set-language-environment 'Chinese-GB)
