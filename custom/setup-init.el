@@ -1,0 +1,1 @@
+(line-number-mode t)

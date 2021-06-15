@@ -23,6 +23,8 @@
 ;; (require 'setup-ggtags)
 (require 'setup-cedet)
 (require 'setup-editing)
+(require 'speedbar)
+(speedbar 1)
 ;;;我的配置
 ;;(require 'setnu)
 ;;;设置行号
@@ -47,9 +49,12 @@
 (setq default-process-coding-system 'euc-cn)
 
 (setq-default pathname-coding-system 'euc-cn)
+;;;
 
+;;(speedbar 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;;;;;;;;;;;;;;;;;
 ;; function-args
 ;; (require 'function-args)
@@ -62,10 +67,22 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+   '(sr-speedbar dashboard-ls zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+
+(require 'sr-speedbar)
+(setq sr-speedbar-right-side nil)
+(setq sr-speedbar-width 25)
+(setq dframe-update-speed t)
+(global-set-key (kbd "<f4>") (lambda()
+          (interactive)
+          (sr-speedbar-toggle)))
+(put 'upcase-region 'disabled nil)

@@ -1,0 +1,405 @@
+;; Object semanticdb-project-database-file-15782ce293b0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15782ce293b0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15782ce293cc"
+      :major-mode c++-mode
+      :tags 
+        '( ("init.h" include nil nil [12 29])
+            ("eredis.h" include nil nil [30 49])
+            ("eerrno.h" include nil nil [50 69])
+            ("logger.h" include nil nil [70 89])
+            ("master.h" include nil nil [90 109])
+            ("eevents.h" include nil nil [110 130])
+            ("eclient.h" include nil nil [131 151])
+            ("version.h" include nil nil [152 172])
+            ("testtool.h" include nil nil [173 194])
+            ("loggeraux.h" include nil nil [195 217])
+            ("parameter.h" include nil nil [218 240])
+            ("file_oper.h" include nil nil [241 263])
+            ("logger_mgr.h" include nil nil [264 287])
+            ("signalhandler.h" include nil nil [288 314])
+            ("work_process.h" include nil nil [315 340])
+            ("work_process_src.h" include nil nil [341 370])
+            ("command_sig_handler.h" include nil nil [371 403])
+            ("unistd.h" include (:system-flag t) nil [405 424])
+            ("g_nMasterPid" variable (:type ("pid_t" type (:type "class") nil nil)) nil [426 445])
+            ("g_proxyConfig" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("ProxyConfig" type (:type "class") nil nil))
+                nil [458 492])
+            ("g_rProcess" variable
+               (:typemodifiers ("extern")
+                :type ("WorkerProcess" type (:type "class") nil nil))
+                nil [493 525])
+            ("RegisterChildSignals" function
+               (:prototype-flag t
+                :type "void")
+                nil [539 567])
+            ("DumpCrashStatck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sig" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [589 603])
+                    ("i_frame_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [604 627]))                  
+                :type "void")
+                nil [568 628])
+            ("RecvSignal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [645 653]))                  
+                :type "void")
+                nil [629 654])
+            ("SetSignalTriggerStack" function
+               (:prototype-flag t
+                :type "void")
+                nil [655 684])
+            ("SetIgnoreSig" function
+               (:prototype-flag t
+                :type "void")
+                nil [685 705])
+            ("KillChild" function
+               (:prototype-flag t
+                :type "void")
+                nil [706 723])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [734 743])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [744 757]))                  
+                :type "int")
+                nil [725 3572])
+            ("KillChild" function (:type "void") nil [3574 4113])
+            ("RegisterChildSignals" function (:type "void") nil [4115 4292])
+            ("DumpCrashStatck" function
+               (:arguments 
+                  ( ("sig" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4315 4329])
+                    ("i_frame_size" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4330 4353]))                  
+                :type "void")
+                nil [4294 4773])
+            ("RecvSignal" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [4791 4799]))                  
+                :type "void")
+                nil [4775 4994])
+            ("SetSignalTriggerStack" function (:type "void") nil [5019 5141])
+            ("SetIgnoreSig" function (:type "void") nil [5143 5193]))          
+      :file "main.cpp"
+      :pointmax 5194
+      :fsize 5512
+      :lastmodtime '(24658 47181 546609 837000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15782d1d77c8"
+      :file "init.h"
+      :fsize 1646
+      :lastmodtime '(24658 47181 546609 837000))
+    (semanticdb-table "semanticdb-table-15782d243c54"
+      :file "master.h"
+      :fsize 4050
+      :lastmodtime '(24658 47181 546609 837000))
+    (semanticdb-table "semanticdb-table-15782d2a6b74"
+      :file "version.h"
+      :fsize 240
+      :lastmodtime '(24658 47181 549943 170000))
+    (semanticdb-table "semanticdb-table-15782d3a96f8"
+      :file "parameter.h"
+      :fsize 290
+      :lastmodtime '(24658 47181 546609 837000))
+    (semanticdb-table "semanticdb-table-15782d4df7b4"
+      :major-mode c++-mode
+      :tags 
+        '( ("master.h" include nil nil [1 20])
+            ("eerrno.h" include nil nil [21 40])
+            ("logger.h" include nil nil [41 60])
+            ("statis.h" include nil nil [61 80])
+            ("channel.h" include nil nil [81 101])
+            ("version.h" include nil nil [102 122])
+            ("commpublic.h" include nil nil [123 146])
+            ("logger_mgr.h" include nil nil [147 170])
+            ("time_helper.h" include nil nil [171 195])
+            ("work_process.h" include nil nil [196 221])
+            ("signalhandler.h" include nil nil [222 248])
+            ("work_process_src.h" include nil nil [249 278])
+            ("manager_sig_handler.h" include nil nil [279 311])
+            ("map" include (:system-flag t) nil [313 327])
+            ("vector" include (:system-flag t) nil [328 345])
+            ("std::map" using (:type ("std::map" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [347 362])
+            ("g_masterRootPool" variable
+               (:pointer 1
+                :type ("apr_pool_t" type (:type "class") nil nil))
+                nil [363 392])
+            ("master_event_base" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("event_base" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [393 437])
+            ("g_sync_transfer_cfg_time_hour" variable
+               (:default-value "-1"
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [438 482])
+            ("g_timeout_trigger_cnt" variable
+               (:default-value "0"
+                :type "int")
+                nil [483 513])
+            ("g_nMasterPid" variable
+               (:typemodifiers ("extern")
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [527 555])
+            ("spair" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("evutil_socket_t" type (:type "class") nil nil))
+                nil [556 588])
+            ("g_proxyConfig" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("ProxyConfig" type (:type "class") nil nil))
+                nil [589 625])
+            ("g_rProcess" variable
+               (:typemodifiers ("extern")
+                :type ("WorkerProcess" type (:type "class") nil nil))
+                nil [626 660])
+            ("g_masterSignalMap" variable
+               (:typemodifiers ("extern")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("MSG_ID_TYPE" type nil nil nil)
+                          ("SigHandCallback" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [680 744])
+            ("g_workerInfo" variable
+               (:typemodifiers ("extern")
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("WorkerInfo" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [745 790])
+            ("SocketReadCallbackMaster" function
+               (:arguments 
+                  ( ("bev" variable
+                       (:pointer 1
+                        :type ("bufferevent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [876 900])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [901 911]))                  
+                :type "void")
+                nil [846 1243])
+            ("SocketErrorCallbackMaster" function
+               (:arguments 
+                  ( ("bev" variable
+                       (:pointer 1
+                        :type ("bufferevent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1276 1300])
+                    ("event" variable (:type "short") (reparse-symbol arg-sub-list) [1301 1313])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1314 1324]))                  
+                :type "void")
+                nil [1245 1568])
+            ("AcceptConnCallbackMaster" function
+               (:arguments 
+                  ( ("listener" variable
+                       (:pointer 1
+                        :type ("evconnlistener" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1600 1632])
+                    ("fd" variable (:type ("evutil_socket_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1633 1652])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1653 1675])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1676 1684])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1685 1695]))                  
+                :type "void")
+                nil [1570 2078])
+            ("BackwardRequest" function
+               (:arguments 
+                  ( ("req" variable
+                       (:pointer 1
+                        :type ("evhttp_request" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2101 2128])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2129 2139]))                  
+                :type "void")
+                nil [2080 3663])
+            ("GetResponseMsgByHandleStatus" function
+               (:arguments 
+                  ( ("evout" variable
+                       (:pointer 1
+                        :type ("evbuffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3779 3802])
+                    ("rs" variable (:type ("emm_status_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3803 3819])
+                    ("typeID" variable (:type "int") (reparse-symbol arg-sub-list) [3820 3831])
+                    ("userout" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3832 3846]))                  
+                :type ("emm_status_t" type (:type "class") nil nil))
+                nil [3737 5607])
+            ("ServerStatus" function
+               (:arguments 
+                  ( ("req" variable
+                       (:pointer 1
+                        :type ("evhttp_request" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5627 5654])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5655 5665]))                  
+                :type "void")
+                nil [5609 5990])
+            ("RegisterHttpServerURL" function
+               (:arguments 
+                  ( ("httpserver" variable
+                       (:pointer 1
+                        :type ("evhttp" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6019 6045]))                  
+                :type "void")
+                nil [5992 6239])
+            ("HandleBackwardMsg" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6272 6285])
+                    ("buflen" variable (:type "int") (reparse-symbol arg-sub-list) [6286 6297])
+                    ("outmsgid" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6298 6312])
+                    ("userout" variable
+                       (:pointer 2
+                        :type ("cJSON" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6313 6329]))                  
+                :type ("emm_status_t" type (:type "class") nil nil))
+                nil [6241 7562])
+            ("CreateManagerService" function (:type "int") nil [7581 7922])
+            ("ResourcesInit" function (:type "int") nil [7924 8325])
+            ("ResourcesDestory" function (:type "int") nil [8327 8465])
+            ("ManagerService" function (:type "int") nil [8467 11793])
+            ("TimeOutCallback" function
+               (:arguments 
+                  ( ("fd" variable (:type ("evutil_socket_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11867 11886])
+                    ("events" variable (:type "short") (reparse-symbol arg-sub-list) [11887 11900])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11901 11911]))                  
+                :type "void")
+                nil [11846 13173])
+            ("ShowRecvBuffer" function
+               (:arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13195 13214])
+                    ("blen" variable (:type "int") (reparse-symbol arg-sub-list) [13215 13224]))                  
+                :type "void")
+                nil [13175 13693])
+            ("BufferToCjson" function
+               (:arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13713 13724])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [13725 13733])
+                    ("out" variable
+                       (:pointer 2
+                        :type ("cJSON" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13734 13746]))                  
+                :type "int")
+                nil [13695 13911])
+            ("ChildProcessExitHandler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [14010 14020]))                  
+                :type "void")
+                nil [13981 15306])
+            ("IsMaster" function (:type "bool") nil [15308 15376])
+            ("SaveMasterProcessID" function (:type ("BOOL" type (:type "class") nil nil)) nil [15445 15847])
+            ("SaveWorkerProcessID" function (:type ("BOOL" type (:type "class") nil nil)) nil [15917 16440])
+            ("ChildInfoRead" function
+               (:arguments 
+                  ( ("bev" variable
+                       (:pointer 1
+                        :type ("bufferevent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16492 16516])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16517 16527]))                  
+                :type "void")
+                nil [16473 17203])
+            ("GetMasterEventBase" function
+               (:pointer 1
+                :type ("event_base" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17205 17275]))          
+      :file "master.cpp"
+      :pointmax 17275
+      :fsize 18198
+      :lastmodtime '(24658 47181 546609 837000)
+      :unmatched-syntax nil))
+  :file "!home!jesson!gitee!libevent-tcpproxy!lvnewgateway!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

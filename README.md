@@ -1,5 +1,11 @@
 Emacs demo setup for C/C++ described here: http://tuhdo.github.io/c-ide.html
 
+
+## 显示目录
+M-x speedbar
+
+## 
+
 ## 重新加载配置
 
 不重启 Emacs 让新修改的配置内容生效，有四个函数可以做到：

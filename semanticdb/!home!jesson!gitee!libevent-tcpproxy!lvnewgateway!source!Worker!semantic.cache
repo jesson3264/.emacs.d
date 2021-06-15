@@ -1,0 +1,235 @@
+;; Object semanticdb-project-database-file-15782d3e23f8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15782d3e23f8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15782d3e2414"
+      :major-mode c-mode
+      :tags 
+        '( ("__WORK_PROCESS_H__" variable (:constant-flag t) nil [70 88])
+            ("eerrno.h" include nil nil [89 108])
+            ("cominc.h" include nil nil [109 128])
+            ("mailbox.h" include nil nil [129 149])
+            ("event.h" include (:system-flag t) nil [151 169])
+            ("arpa/inet.h" include (:system-flag t) nil [170 192])
+            ("event2/event.h" include (:system-flag t) nil [193 218])
+            ("event2/listener.h" include (:system-flag t) nil [219 247])
+            ("event2/bufferevent.h" include (:system-flag t) nil [248 279])
+            ("event2/bufferevent_struct.h" include (:system-flag t) nil [280 318])
+            ("openssl/ssl.h" include (:system-flag t) nil [319 343])
+            ("openssl/err.h" include (:system-flag t) nil [344 368])
+            ("openssl/rand.h" include (:system-flag t) nil [369 394])
+            ("event.h" include (:system-flag t) nil [395 413])
+            ("event2/listener.h" include (:system-flag t) nil [414 442])
+            ("event2/bufferevent_ssl.h" include (:system-flag t) nil [443 478])
+            ("WorkerProcessInitLibevent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("pProcess" variable
+                       (:pointer 1
+                        :type ("WorkerProcess" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1063 1087])
+                    ("nPid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1088 1099]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1033 1100])
+            ("WorkProcessWorking" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("emm_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("masterpid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [989 1005]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [957 1006])
+            ("CreateOneWorkerProcess" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("emm_status_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [918 928]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [882 929])
+            ("CreateAllWorkProcess" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("emm_status_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [820 856])
+            ("WorkerInfo" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("WorkerInfo" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [635 782])
+            ("WorkerInfo" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("channel" variable
+                       (:dereference 1
+                        :type ("evutil_socket_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [667 694])
+                    ("run_state" variable (:type ("RunState" type (:type "class") nil nil)) (reparse-symbol classsubparts) [750 769]))                  )
+                (reparse-symbol extern-c-contents) [635 782])
+            ("RunState" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("RunState" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [520 633])
+            ("RunState" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("RUN_STATE_UNDEFINE" variable
+                       (:constant-flag t
+                        :default-value (570 571)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [549 571])
+                    ("RUN_STATE_RUNNING" variable
+                       (:constant-flag t
+                        :default-value (597 598)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [577 598])
+                    ("RUN_STATE_STOP" variable
+                       (:constant-flag t
+                        :default-value (621 622)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [604 622]))                  )
+                (reparse-symbol extern-c-contents) [520 633]))          
+      :file "work_process.h"
+      :pointmax 1139
+      :fsize 1244
+      :lastmodtime '(24658 47181 546609 837000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__WORK_PROCESS_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table-15782e3a5ca4"
+      :file "work_process_src.h"
+      :fsize 672
+      :lastmodtime '(24658 47181 546609 837000))
+    (semanticdb-table "semanticdb-table-15782d25f7e0"
+      :major-mode c++-mode
+      :tags 
+        '( ("work_process.h" include nil nil [1 26])
+            ("logger.h" include nil nil [28 47])
+            ("cfgmgr.h" include nil nil [48 67])
+            ("eredis.h" include nil nil [68 87])
+            ("version.h" include nil nil [88 108])
+            ("eclient.h" include nil nil [109 129])
+            ("eserver.h" include nil nil [130 150])
+            ("channel.h" include nil nil [151 171])
+            ("logger_mgr.h" include nil nil [172 195])
+            ("filewriter.h" include nil nil [196 219])
+            ("commpublic.h" include nil nil [220 243])
+            ("mailbox_mgr.h" include nil nil [244 268])
+            ("http_parser.h" include nil nil [269 293])
+            ("signalhandler.h" include nil nil [294 320])
+            ("tcp_proxy_func.h" include nil nil [321 348])
+            ("work_process_src.h" include nil nil [349 378])
+            ("event.h" include (:system-flag t) nil [380 398])
+            ("arpa/inet.h" include (:system-flag t) nil [399 421])
+            ("event2/event.h" include (:system-flag t) nil [422 447])
+            ("event2/listener.h" include (:system-flag t) nil [448 476])
+            ("event2/bufferevent.h" include (:system-flag t) nil [477 508])
+            ("event2/bufferevent_struct.h" include (:system-flag t) nil [509 547])
+            ("vector" include (:system-flag t) nil [549 566])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [567 585])
+            ("g_pSSLCtx" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("SSL_CTX" type (:type "class") nil nil))
+                nil [587 615])
+            ("g_proxyConfig" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("ProxyConfig" type (:type "class") nil nil))
+                nil [634 669])
+            ("g_rProcess" variable
+               (:typemodifiers ("extern")
+                :type ("WorkerProcess" type (:type "class") nil nil))
+                nil [670 702])
+            ("g_listener" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("evconnlistener" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [720 761])
+            ("g_base" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("event_base" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [762 795])
+            ("g_workerInfo" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("WorkerInfo" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [796 834])
+            ("g_RootPool" variable
+               (:pointer 1
+                :type ("apr_pool_t" type (:type "class") nil nil))
+                nil [836 859])
+            ("MasterMsgRead" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bev" variable
+                       (:pointer 1
+                        :type ("bufferevent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [879 903])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [904 914]))                  
+                :type "void")
+                nil [860 915])
+            ("CreateAllWorkProcess" function (:type ("emm_status_t" type (:type "class") nil nil)) nil [952 1307])
+            ("CreateOneWorkerProcess" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [1367 1377]))                  
+                :type ("emm_status_t" type (:type "class") nil nil))
+                nil [1331 2820])
+            ("WorkProcessWorking" function
+               (:arguments 
+                  ( ("masterpid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2880 2896]))                  
+                :type ("emm_status_t" type (:type "class") nil nil))
+                nil [2848 3904])
+            ("MasterMsgRead" function
+               (:arguments 
+                  ( ("bev" variable
+                       (:pointer 1
+                        :type ("bufferevent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3966 3990])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3991 4001]))                  
+                :type "void")
+                nil [3947 5190])
+            ("WorkerProcessInitLibevent" function
+               (:arguments 
+                  ( ("pProcess" variable
+                       (:pointer 1
+                        :type ("WorkerProcess" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5224 5248])
+                    ("nPid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5249 5260]))                  
+                :type "int")
+                nil [5194 5598]))          
+      :file "work_process.cpp"
+      :pointmax 5599
+      :fsize 5810
+      :lastmodtime '(24658 47181 546609 837000)
+      :unmatched-syntax nil))
+  :file "!home!jesson!gitee!libevent-tcpproxy!lvnewgateway!source!Worker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
